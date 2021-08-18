@@ -1,3 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  width: 25%;
+  height: 100px;
+}
+
+.right {
+  width: 75%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.search-box {
+  background: #fafafa;
+  padding: 10px 13px;
+}
+
+.search-box .input-wrapper {
+  background: #fff;
+  border-radius: 40px;
+}
+
+.search-box .input-wrapper i {
+  color: grey;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  width: 95%;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +70,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(89, 161, 92);
 }
 
 .topnav a {
@@ -18,15 +83,80 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #408037;
   color: white;
 }
 
 .topnav-right {
   float: right;
 }
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.friend-list {
+  padding: 10px 15px;
+  display: flex;
+  vertical-align: baseline;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.friend-list .text {
+  margin-left: 12px;
+  width: 70%;
+}
+
+.friend-list .text h6 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.h6, h6 {
+  font-size: 1rem;
+}
+ .h6, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+      border-top-color: currentcolor;
+      border-top-style: none;
+      border-top-width: 0px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
