@@ -170,10 +170,10 @@ hr {
   margin-bottom: 0;
 }
 
-.chat-box-tray {
-  background: #eee;
+.chat-box {
+  background: rgb(230, 230, 230);
   display: flex;
-  width: 1000px;
+  width: 940px;
   align-items: baseline;
   padding: 10px 15px;
   align-items: center;
@@ -181,48 +181,25 @@ hr {
   bottom: 0;
 }
 
-.chat-box-tray i {
+.chat-box i {
   padding: 10px;
-  color: grey;
+  color: rgb(87, 86, 86);
   margin-right: 0px;
   font-size: 30px;
-  vertical-align: middle;
 }
 
-.chat-box-tray input {
-  margin: 0 10px;
+.chat-box input {
   padding: 6px 2px;
+  margin-bottom: 0px;
+  text-align: center;
 }
+
 input {
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   width: 80%;
 }
+
 button, input {
   overflow: visible;
 }
-/* button, input, optgroup, select, textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-} */
-
-/* .material-icons {
-  font-family: 'Material Icons';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-} */
-
