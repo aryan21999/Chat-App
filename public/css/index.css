@@ -160,3 +160,86 @@ hr {
   overflow: visible;
 }
 
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.friend-name {
+  padding: 10px 15px;
+  display: flex;
+  vertical-align: baseline;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.friend-name .text {
+  margin-left: 12px;
+  width: 70%;
+}
+
+.friend-name .text h6 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.chat-box-tray {
+  background: #eee;
+  display: flex;
+  width: 1000px;
+  align-items: baseline;
+  padding: 10px 15px;
+  align-items: center;
+  margin-top: 420px;
+  bottom: 0;
+}
+
+.chat-box-tray i {
+  padding: 10px;
+  color: grey;
+  margin-right: 0px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.chat-box-tray input {
+  margin: 0 10px;
+  padding: 6px 2px;
+}
+input {
+  border: none;
+  border-radius: 30px;
+  width: 80%;
+}
+button, input {
+  overflow: visible;
+}
+/* button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+} */
+
+/* .material-icons {
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+} */
+
