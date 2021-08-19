@@ -258,7 +258,7 @@ div {
 .chat-box {
   background: rgb(230, 230, 230);
   display: flex;
-  width: 100%;
+  width: 960px;
   align-items: baseline;
   padding: 10px 15px;
   align-items: center;
