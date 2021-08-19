@@ -125,7 +125,7 @@ hr {
   border-right: 1px solid #dee2e6 !important;
 }
 
-.col-md-4 {
+.col-md-3 {
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
@@ -167,6 +167,7 @@ div {
   background: #74b9ff;
   color: #fff;
 }
+
 
 .chat {
   padding: 10px 14px;
