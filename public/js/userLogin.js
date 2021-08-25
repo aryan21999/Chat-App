@@ -4,6 +4,8 @@ function login() {
     location.replace("/home/celticlab/Desktop/Whats-App/views/index.html")
 }
 
+
+
 //     var text = new Text({
 //         name: name
 //     })
