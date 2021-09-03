@@ -15,91 +15,49 @@
     <a class="active" href="#home">What's-App</a>
     <div class="topnav-right">
       <span id="name"></span>
-      <button onclick="logOut()" action="logOut" type="submit" form="nameform" value="Submit" 
+      <button onclick="logOut()" action="logOut" type="submit" form="nameform" value="Submit"
         style="background-color:rgb(89, 161, 92); height:40px; width: auto; margin-top: 4px;margin-right: 10px;">
         Log-Out</button>
     </div>
   </div>
-    <div class="column left" style="background-color:rgb(235, 235, 235);height:auto;">
-      <div class="header"
-        style="font-size:20px;margin-top: 5px;background: rgb(177, 177, 177);padding: 10px 15px;border-radius: 7px;">
-        Friends</h2>
-         <a href="/home/celticlab/Desktop/Chat-App-main/views/addContact.html">
+  <div class="column left" style="background-color:rgb(235, 235, 235);height:auto;">
+    <div class="header"
+      style="font-size:20px;margin-top: 5px;background: rgb(177, 177, 177);padding: 10px 15px;border-radius: 7px;">
+      Friends</h2>
+      <a href="/home/celticlab/Desktop/Chat-App-main/views/addContact.html">
         <i style="font-size:24px;float: right;" class="fa">&#xf067;</i>
       </a>
-      </div>
-
-      <hr>
-      <div class="row-8" style="height: 460px; overflow:auto;" id="friends">
-      </div>
     </div>
 
+    <hr>
+    <div class="row-8" style="height: 460px; overflow:auto;" id="friends">
 
-    <div class="column right" style="background-color:rgb(255, 255, 255);">
-      <div class="settings-tray">
-      <div class="col-12" style="height: 480px;overflow:auto;" >
-        <!-- <div class="chat-panel"> -->
-          <!-- <div class="row">
-            <div class="col-md-3">
-              <div class="chat chat--left">
-                Hi....!
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 offset-md-9">
-              <div class="chat chat--right">
-                Hlw....!
-              </div>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-md-3">
-              <div class="chat chat--left">
-                How's your day?
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 offset-md-9">
-              <div class="chat chat--right">
-                All Good,What about you?
-              </div>
-            </div>
-          </div>    
-          <div class="row ">
-            <div class="col-md-3">
-              <div class="chat chat--left">
-                By the way where you are
-              </div>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-md-3 offset-md-9">
-              <div class="chat chat--left">
-                As usual Home.
-              </div>
-            </div>
-          </div>              
-          <div class="row ">
-            <div class="col-md-3">
-              <div class="chat chat--left">
-                ok!
-              </div>
-            </div>
-          </div> -->
-        <!-- </div>    -->
+    </div>
+  </div>
 
-          <div class="chat-box">
-            <span style="font-size:25px;padding: 6px;">&#128522;</span>
-            <input type="text" placeholder="Type your message here...">
-            <i style="font-size:24px" class="fa">&#xf0c6;</i>
-            <i style="font-size:25px" class="fa">&#xf1d9;</i>
+
+  <div class="column right" style="background-color:rgb(255, 255, 255);">
+        <div>
+          <h2 id="chatHeader"></h2>
+        </div>
+        <div class="settings-tray">
+        <div class="chatTable" id="chat">
+        <div class="col-12" style="height: 590px;overflow:auto;">
+          <div class="chat-panel" >
           </div>
         </div>
       </div>
     </div>
-    <script src="../public/js/index.js"></script>
+        <div class="chat-box">
+          <span style="font-size:25px;padding: 6px;">&#128522;</span>
+          <input type="text" placeholder="Type your message here...">
+          <i style="font-size:24px" class="fa">&#xf0c6;</i>
+          <i style="font-size:25px" class="fa">&#xf1d9;</i>
+        </div>
+ 
+  </div>
+
+  <script src="../public/js/index.js"></script>
 </body>
 
 </html>
