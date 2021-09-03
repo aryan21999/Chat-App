@@ -57,18 +57,20 @@ body {
   float: right;
 }
 
-.h4, h4 {
-  font-size: 1rem;
-  margin-bottom: .5rem;
-  font-family: inherit;
-  color: inherit;
+
+.h2, h2 {
+  font-size: 35px;
+  margin-top: 9px;
+  font-style: Arial;
+  background-color: #d1d3d1;
 }
 
 .card {
-  margin: 2px;
+  margin: 6px;
   border-width: 0.5px;
   background-color: #fff;
   border-radius: 5px;
+  font-size: 20px;
   text-align: initial;
   background-color: white;
   color: black;
