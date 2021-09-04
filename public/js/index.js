@@ -3,48 +3,70 @@ var friends = JSON.parse(localStorage.getItem("friends"))
 var list = ''
 console.log(list)
 
+var Aryan = [["Aryan", "Hii", 1212443], ["Aryan Gupta", "Hello", 1223435], ["Aryan ", "How are you", 1324355], ["Aryan Gupta", "I am good.", 1243545]]
+var lucky = [["lucky", "hlw...", 1212443], ["Aryan Gupta", "Hii", 1223435], ["lucky", "How are you?..", 1324355], ["Aryan Gupta", "I am fine.", 1243545]]
+var rahul = [["rahul", "Hesdsaedcwy", 1212443], ["Aryan Gupta", "Hii", 1223435], ["rahul", "How are you....", 1324355], ["Aryan Gupta", "I am feeling good.", 1243545]]
+
+if(window[friends[0].split(" ").join("")] ==  null){
+    window[friends[0].split(" ").join("")] = []
+    chat(window[friends[0].split(" ").join("")])
+}
+
 for (i = 0; i < friends.length; i++) {
-    list += `<div class=row-8> 
-    <button class="card" id="${i}" onclick="openClick(event)"  value="${friends[i]}">${friends[i]}</button><br>
-    </div>`
+    list += `<button class="card" id="${i}" onclick="openClick(event)" value="${friends[i]}">${friends[i]}</button><br>`
 }
 
 document.getElementById('chatHeader').innerHTML = friends[0]
 document.getElementById('friends').innerHTML = list
 
+// chat(window[friends[0].split(" ").join("")])
+
 function openClick(e) {
-    var i, card, chatcontent;
-    card = document.getElementsByClassName("card");
-    for (i = 0; i < card.length; i++) {
-        card[i].className = card[i].className.replace(" active", "");
+   var cards = document.getElementsByClassName("card");
+   console.log(document.getElementsByClassName("card"))
+    for (i = 0; i < cards.length; i++) {
+        cards[i].className = cards[i].className.replace(" active", "");
     }
-    chatcontent = document.getElementsByClassName("chatcontent");
-    for (i = 0; i < chatcontent.length; i++) {
-      chatcontent[i].style.display = "none";
-    }
-    document.getElementById('chat').innerHTML = list
-
     e.currentTarget.className += " active";
-
     document.getElementById('chatHeader').innerHTML = e.currentTarget.getAttribute('value')
+    console.log(e.currentTarget.getAttribute('value'))
+    chat(window[e.currentTarget.getAttribute('value').split(" ").join("")])
 }
 
+    
 
-
-var chat = JSON.parse(localStorage.getItem('chat'))
-var list = ''
-console.log(list)
-
-for (i=0; i< chat.length; i++)
-{
-    list += `<div class="chat" id="${i}"><p>${chat[i]}</p></div>`
+function chat(name) {
+    var list = ''
+    console.log(list)
+    for (i=0; i < name.length; i++)
+    {
+        console.log(name[i][0]==localStorage.getItem("name"))
+        // list += `<div class="chats" id="${i}"><h4>${name[i][1]}</h4></div>`
+        if(name[i][0]==localStorage.getItem("name")){
+            list += `<div class="chats col-md-3 offset-md-9 chat-bubble chat-bubble--right" id="${i}"><h4>${name[i][1]}</h4></div>`
+        }
+        else{
+            list += `<div class="chats col-md-3 chat-bubble chat-bubble--left" id="${i}"><h4>${name[i][1]}</h4></div>`
+        }
+    }
+    document.getElementById("chatBody").innerHTML = list
+    console.log(document.getElementById("chatBody").innerHTML)
 }
+// function chatUser(){
+//     var  friendChat = 
+//     console.log(friendChat)
+//     var Aryan = JSON.parse(localStorage.getItem("Aryan"))
+//     if(Aryan ==  null){
+//         Aryan = []
+//     }
+//     Aryan.push(["Avikal", document.getElementById("inbox").value, Date.now()])
+//     localStorage.setItem("Aryan", JSON.stringify(Aryan))
+// }
+// document.getElementById("inbox").innerHTML = Aryan
 
-var chat = [["Hlw bhai"],["hi"],["kya kr rhe"],["kuch nahi."]]
+// var Aryan = JSON.parse(localStorage.getItem('Aryan'))
 
-localStorage.setItem("chat", JSON.stringify(chat))
-
-
-
-
-
+localStorage.setItem("Aryan", JSON.stringify(Aryan))
+localStorage.setItem("lucky", JSON.stringify(lucky))
+// localStorage.setItem("rahul", JSON.stringify(rahul))
+// localStorage.setItem("AryanGupta", JSON.stringify(AryanGupta))
