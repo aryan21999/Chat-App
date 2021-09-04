@@ -3,10 +3,6 @@ var friends = JSON.parse(localStorage.getItem("friends"))
 var list = ''
 console.log(list)
 
-var Aryan = [["Aryan", "Hii", 1212443], ["Aryan Gupta", "Hello", 1223435], ["Aryan ", "How are you", 1324355], ["Aryan Gupta", "I am good.", 1243545]]
-var lucky = [["lucky", "hlw...", 1212443], ["Aryan Gupta", "Hii", 1223435], ["lucky", "How are you?..", 1324355], ["Aryan Gupta", "I am fine.", 1243545]]
-var rahul = [["rahul", "Hesdsaedcwy", 1212443], ["Aryan Gupta", "Hii", 1223435], ["rahul", "How are you....", 1324355], ["Aryan Gupta", "I am feeling good.", 1243545]]
-
 if(window[friends[0].split(" ").join("")] ==  null){
     window[friends[0].split(" ").join("")] = []
     chat(window[friends[0].split(" ").join("")])
@@ -33,7 +29,10 @@ function openClick(e) {
     chat(window[e.currentTarget.getAttribute('value').split(" ").join("")])
 }
 
-    
+
+var Aryan = [["Aryan", "Hii", 1212443], ["Aryan Gupta", "Hello", 1223435], ["Aryan ", "How are you", 1324355], ["Aryan Gupta", "I am good.", 1243545]]
+var lucky = [["lucky", "hlw...", 1212443], ["Aryan Gupta", "Hii", 1223435], ["lucky", "How are you?..", 1324355], ["Aryan Gupta", "I am fine.", 1243545]]
+var rahul = [["rahul", "Hesdsaedcwy", 1212443], ["Aryan Gupta", "Hii", 1223435], ["rahul", "How are you....", 1324355], ["Aryan Gupta", "I am feeling good.", 1243545]]
 
 function chat(name) {
     var list = ''

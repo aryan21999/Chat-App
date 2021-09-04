@@ -137,8 +137,8 @@ div {
   height: 100%;
 }
 
-.col-md-3 .offset-md-9 {
-  background: #196fc5;
+.offset-md-9 {
+  background-color: #9ac7a0;
 
 }
 
